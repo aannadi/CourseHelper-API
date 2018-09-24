@@ -2,7 +2,6 @@ import sys
 from requests import get
 from requests.exceptions import RequestException
 from bs4 import BeautifulSoup
-from utils import get_classes
 
 def get_html(url):
     """
