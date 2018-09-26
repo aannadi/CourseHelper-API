@@ -13,7 +13,8 @@ def get_enrollment_info(c):
     return dic['enrollmentStatus']
 
 def get_teacher_info(c):
-    url = 'http://www.ratemyprofessors.com/ShowRatings.jsp?tid=1621181'
+    url = 'http://www.ratemyprofessors.com/ShowRatings.jsp?tid=' + str(c)
+    print(url)
     scores = []
     html = get_html(url)
     elements = html.find_all("div", "grade")
